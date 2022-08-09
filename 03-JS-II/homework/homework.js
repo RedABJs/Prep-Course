@@ -151,19 +151,15 @@ function operadoresLogicos(num1, num2, num3) {
   else if(num1<0||num2<0||num3<0){
     return "Hay negativos";
   }
-  else{
-
-    if(num1>num2&&num1>num3&&num1>0){
+  else if(num1>num2&&num1>num3&&num1>0){
         return "Número 1 es mayor y positivo"
     }
-    else if (num3>num1&&num3>num2){
+  else if (num3>num1&&num3>num2){
       num3++;
       return num3;
     }
     else return false;
   }
-
-}
 
 function esPrimo(numero) {
   // Devuelve "true" si "numero" es primo
@@ -171,7 +167,7 @@ function esPrimo(numero) {
   // Pista: un número primo solo es divisible por sí mismo y por 1
   // Pista 2: Puedes resolverlo usando un bucle `for`
   // Nota: Los números 0 y 1 NO son considerados números primos
-   if(numero<=2){
+   if(numero<2){
     return false;
    }
    else{
@@ -199,7 +195,7 @@ function tablaDelSeis(){
   //Escribe una función que muestre la tabla de multiplicar del 6 (del 0 al 60).
   //La función devuelve un array con los resultados de la tabla de multiplicar del 6 en orden creciente.
   //Escribe tu código aquí   
-  var TabladelSeis=[];
+  let TabladelSeis=[];
   for ( i=0;i<=10;i++){
     TabladelSeis.push(6*i);
   }
